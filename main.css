@@ -341,7 +341,37 @@ h5 {
 }
 
 .box9 {
+  display: flex;
   grid-area: box9;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.box9 h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 70%;
+}
+
+.bg-green{
+    /* position: absolute; */
+    left: 30px;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #7bc424;
+    color: #fff;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 
