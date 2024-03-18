@@ -333,11 +333,11 @@ h5 {
 .twitter h3 {
   margin-top: 10px;
   margin-bottom: 20px;
-  font-family: Arvo, sans-serif;
   font-size: 22px;
   color: #fff;
   font-weight: 400;
   line-height: 32px;
+  font-family: Arvo, sans-serif;
 }
 
 .box9 {
@@ -346,35 +346,62 @@ h5 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
 }
 
-.box9 h3{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-family: Arvo, sans-serif;
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: 400;
-    width: 70%;
+.box9 h3 {
+  width: 70%;
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
 }
 
-.bg-green{
-    /* position: absolute; */
-    left: 30px;
-    top: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
-    background-color: #7bc424;
-    color: #fff;
-    font-size: 8px;
-    line-height: 20px;
-    font-weight: 700;
-    letter-spacing: 2px;
+.bg-green {
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  padding-right: 10px;
+  letter-spacing: 2px;
+  background-color: #7bc424;
 }
-
 
 .box10 {
+  color: #fff;
+  display: flex;
+  overflow: hidden;
   grid-area: box10;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2c2c;
+}
+
+.tv img {
+  left: -20%;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.box10 h3 {
+  width: 44%;
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
+}
+
+.box8,
+.box9,
+.box10 {
+  height: 200px;
 }
