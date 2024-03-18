@@ -84,6 +84,7 @@ h5 {
 .box3 {
   display: flex;
   grid-area: box3;
+  margin-top: -5px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -270,7 +271,42 @@ h5 {
 
 .box7 {
   grid-area: box7;
+  position: relative;
+  background-color: #93b6b7;
 }
+
+.best-choise {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #fa684f;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.box7 h3 {
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fff;
+  max-width: 280px;
+  margin: auto;
+  padding-top: 51px;
+  padding-bottom: 31px;
+}
+
+.box7 img {
+  left: -7%;
+  width: 90%;
+  position: relative;
+}
+
 .box8 {
   grid-area: box8;
 }
