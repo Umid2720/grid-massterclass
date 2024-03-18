@@ -20,7 +20,7 @@ h5 {
 .boxes {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
-  /* grid-template-columns: repeat(7, 1fr); */
+  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-areas:
     "box1 box1 box2 box2"
     "box1 box1 box2 box2"
@@ -95,9 +95,7 @@ h5 {
   display: block;
   font-size: 22px;
   max-width: 230px;
-  margin-top: 10px;
   line-height: 32px;
-  margin-bottom: 20px;
   font-family: Arvo, sans-serif;
 }
 
@@ -156,20 +154,120 @@ h5 {
 }
 
 .box4 h3 {
+  font-size: 22px;
   margin-top: 10px;
+  font-weight: 400;
+  line-height: 32px;
   margin-bottom: 20px;
   font-family: Arvo, sans-serif;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 400;
 }
 
 .box5 {
+  color: #fff;
+  display: flex;
   grid-area: box5;
+  align-items: center;
+  /* padding: 1rem 0 4rem; */
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8f76bc;
 }
+
+.icloud-image {
+  width: 373px;
+  height: 373px;
+  padding: 2rem;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8166b0;
+}
+
+.icloud-image img {
+  margin: 1rem 0;
+}
+
+.popular-wrapper {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px 13px;
+  line-height: 23px;
+  border-radius: 60px;
+  align-items: center;
+  letter-spacing: 2.4px;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, 0.08);
+}
+
+.box5 h5 {
+  color: #fff;
+}
+
+.box5 p {
+  width: 80%;
+  max-width: 290px;
+  line-height: 26px;
+  padding: 1rem 2rem;
+}
+
+.box5 h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  line-height: 36px;
+  font-family: Arvo, sans-serif;
+}
+
+.box5 a {
+  color: #000;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffc80a;
+}
+
 .box6 {
+  padding: 2rem;
+  display: flex;
   grid-area: box6;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.box6 img {
+  left: -10%;
+  position: relative;
+}
+
+.box6 h3 {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
+}
+
+.box6 a {
+  font-size: 12px;
+  color: #27b9c2;
+  margin-top: 20px;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .box7 {
   grid-area: box7;
 }
