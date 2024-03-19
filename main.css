@@ -27,7 +27,7 @@ h5 {
 
 .boxes {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   /* grid-template-columns: repeat(4, 1fr); */
   grid-template-areas:
     "box1 box1 box2 box2"
@@ -43,12 +43,12 @@ h5 {
   display: grid;
   grid-area: box1;
   align-items: center;
-  padding: 2rem 4rem 0;
+  padding: 2rem 0rem 0 4rem;
   grid-template-columns: 1fr 1fr;
 }
 
 .three-d {
-  width: 80%;
+  width: 65%;
 }
 
 .three-d p {
@@ -60,6 +60,7 @@ h5 {
 .box2 {
   display: flex;
   grid-area: box2;
+  padding: 3rem 4rem;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -115,6 +116,7 @@ h5 {
   display: grid;
   grid-area: box4;
   align-self: end;
+  align-items: flex-end;
   grid-column-gap: 4rem;
   grid-template-columns: 1fr 1fr;
 }
@@ -131,13 +133,14 @@ h5 {
 }
 
 .apple-download {
+  padding: 2rem 0;
   margin-right: 3.5rem;
 }
 
 .apple-download p {
   font-size: 14px;
   color: #9fa3a7;
-  line-height: 28px;
+  line-height: 26px;
 }
 
 .apple-download a {
@@ -146,6 +149,7 @@ h5 {
   margin-top: 20px;
   font-weight: 700;
   display: inline-block;
+  word-spacing: wrap;
   letter-spacing: 2.4px;
   text-decoration: none;
 }
@@ -154,9 +158,10 @@ h5 {
   color: #fff;
   display: flex;
   grid-area: box5;
+  overflow: hidden;
   align-items: center;
-  padding: 1rem 0 4rem;
   flex-direction: column;
+  padding: 1rem 2rem 4rem;
   justify-content: center;
   background-color: #8f76bc;
 }
@@ -164,7 +169,6 @@ h5 {
 .icloud-image {
   width: 373px;
   height: 373px;
-  padding: 2rem;
   display: flex;
   border-radius: 50%;
   align-items: center;
@@ -174,7 +178,7 @@ h5 {
 }
 
 .icloud-image img {
-  margin: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 .popular-wrapper {
@@ -195,20 +199,20 @@ h5 {
 }
 
 .box5 p {
-  width: 80%;
+  padding: 1rem 0;
   max-width: 290px;
-  line-height: 26px;
-  padding: 1rem 2rem;
+  line-height: 24px;
 }
 
 .box5 h2 {
   font-size: 32px;
-  margin-top: 20px;
+  padding-top: 20px;
   line-height: 36px;
   font-family: Arvo, sans-serif;
 }
 
 .box5 a {
+  width: 165px;
   color: #000;
   font-size: 12px;
   margin-top: 30px;
@@ -278,7 +282,8 @@ h5 {
 
 .box7 img {
   left: -7%;
-  width: 90%;
+  width: 80%;
+  bottom: -5px;
   position: relative;
 }
 
@@ -357,8 +362,143 @@ h5 {
   width: 44%;
 }
 
-.box8,
-.box9,
-.box10 {
-  height: 200px;
+/* Media query for responsive */
+/* @media (min-width: 0) and (max-width: 479.9px) {
+} */
+
+/* @media (min-width: 480px) and (max-width: 749.9px) {
+} */
+
+/* @media (min-width: 750px) and (max-width: 989.9px) {
+} */
+
+.box4 {
+  overflow: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 479.9px) {
+  .box1 {
+    grid-template-columns: 1fr;
+  }
+
+  .landing {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .box2 h2 {
+    font-size: 10vw;
+    line-height: 1.2;
+  }
+
+  .boxes {
+    grid-template-areas:
+      "box2 box2"
+      "box1 box1"
+      "box3 box3"
+      "box6 box6"
+      "box4 box4"
+      "box8 box8"
+      "box7 box7"
+      "box5 box5"
+      "box9 box9"
+      "box10 box10";
+  }
+
+  .box4 {
+    grid-template-columns: 1fr;
+  }
+
+  .box7 img {
+    left: -10%;
+    width: 100%;
+    bottom: -5px;
+  }
+  .box9 {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 990.9px) {
+  .boxes {
+    grid-template-areas:
+      "box2 box2"
+      "box1 box1"
+      "box3 box6"
+      "box4 box4"
+      "box8 box5"
+      "box7 box5"
+      "box9 box9"
+      "box10 box10";
+  }
+
+  .box2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .box1 {
+    padding: 2rem 2rem 0;
+  }
+
+  .three-d {
+    width: 100%;
+  }
+
+  .box4 {
+    padding-top: 2rem;
+  }
+
+  .box5 p {
+    font-size: 14px;
+  }
+
+  .icloud-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .icloud-image img {
+    height: 180px;
+  }
+
+  .box7 img {
+    left: -10%;
+    width: 100%;
+    bottom: -30px;
+  }
+
+  .twitter {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box9 {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1234px) {
+  .box2 h2 {
+    font-size: 35px;
+  }
+
+  .box4 {
+    grid-column-gap: 2rem;
+  }
+
+  .hardly-month {
+    max-width: 180px;
+    margin-left: 2rem;
+  }
+
+  .apple-download {
+    margin-right: 2rem;
+  }
+
+  .box8,
+  .box9,
+  .box10 {
+    height: 200px;
+  }
 }
